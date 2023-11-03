@@ -315,11 +315,7 @@ public class Project1
 	 */
 	public static void printGivenCountry(Country[] countriesArray)
 	{
-		@SuppressWarnings("resource") // Note to Dr. Liu or grader: Closing givenCountryScanner yields a NoSuchElementException
-									 //		error. I'm not sure why, I've tried many different ways of fixing this issue within my code.
-									// 		I figured it could be because I've used multiple scanners. Either way, I wanted my
-								   //		code to run without errors, so I commented out givenCountryScnr.close() below.
-		
+		@SuppressWarnings("resource")		
 		Scanner givenCountryScnr = new Scanner(System.in); // Creates a scanner for this method.
 		System.out.print("Enter country name: ");
 		System.out.println();
